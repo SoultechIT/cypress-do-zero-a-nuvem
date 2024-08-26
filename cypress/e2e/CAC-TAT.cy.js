@@ -137,8 +137,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
 
   it('seleciona um arquivo simulando um drag-and-drop', () => {
     cy.fixture('example.json', null).as('myFile')
-    cy.get('#file-upload').selectFile('@myFile', {action: 'drag-drop', timeout: 10000})
-    
+    cy.get('#file-upload').selectFile('@myFile', {action: 'drag-drop'})
     .then(($input) =>{
       expect($input[0].files[0].name).to.eq('example.json')
     })
