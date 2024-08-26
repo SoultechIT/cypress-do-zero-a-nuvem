@@ -4,4 +4,3 @@ cypress/downloads/
 cypress/screenshots/
 cypress/videos/
 .vscode/settings.json
-package-lock.json
